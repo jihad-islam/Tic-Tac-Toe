@@ -104,7 +104,7 @@ class AlgorithmVisualizer:
                             node_x = x + 20 + (tree_width * node_id) / (2**(depth+1))
                             line_color = self.colors['RED'] if pruned else self.colors['BLACK']
                             pygame.draw.line(self.screen, line_color, 
-                                            (parent_x, parent_y), 
+                                            (parent_x, parent_y),  # type: ignore
                                             (node_x, node_y), 2)
                 
                 # Draw nodes

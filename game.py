@@ -203,7 +203,7 @@ class EnhancedTicTacToe:
 
     def draw_winning_line(self, board_x, board_y):
         """Draw winning line animation"""
-        line_type, start, end = self.winning_line
+        line_type, start, end = self.winning_line # type: ignore
         
         start_x = board_x + start[1] * self.CELL_SIZE + self.CELL_SIZE // 2
         start_y = board_y + start[0] * self.CELL_SIZE + self.CELL_SIZE // 2
